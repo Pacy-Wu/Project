@@ -35,7 +35,5 @@ You can also search game products and makeup products in online store.
 Other than that, toward the end of May 2021, I have added the feature that the users are able to create account and login
 with their email. I have also developed some API for others to collect information about my fake online store.
 
-test
-
 
 **For better readibity, I will seperate this page to multiple README.md file under the project file. I will start doing it next month, so stay tuned with that.**
