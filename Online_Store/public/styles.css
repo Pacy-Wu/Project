@@ -1,0 +1,311 @@
+/*
+  Name: Pacy Wu
+  Date: May 20, 2021
+  Section: CSE 154 AD
+
+  This is the style.css page for CP4 of CSE154. It is used by index.html to give
+  the site a consistent header with a navagiation bar. It also stype the search
+  results to make it more readable.
+*/
+
+body {
+  margin: 0px;
+}
+
+body > header, .search {
+  height: 10%;
+}
+
+body > header,
+body > header div,
+main > section,
+ul,
+.result,
+.result div,
+#contact,
+#contact header,
+#contact .all-info,
+.user-info,
+.company-info,
+footer {
+  display: flex;
+  align-items: center;
+}
+
+body > header {
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  padding: 8px 35px 8px 35px;
+}
+
+body > header h1, .result div .product-price {
+  font-family: 'Freckle Face', cursive;
+  letter-spacing: 3px;
+}
+
+body > header h1 {
+  font-size: 45px;
+  color: yellow;
+}
+
+ul,
+main > section,
+.result,
+.result div,
+#contact,
+#contact header,
+.user-info,
+.company-info,
+footer {
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header img {
+  height: 45px;
+  width: 45px;
+  filter: contrast(175%) brightness(130%);
+}
+
+nav ul li,
+.search button,
+#contact .all-info button,
+footer {
+  color: white;
+}
+
+nav ul li, .search button, #account-icon {
+  cursor: pointer;
+}
+
+nav ul li {
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 1px solid white;
+}
+
+.no-border, .search button, #contact .all-info button {
+  border: none;
+}
+
+main > section, .result div, #contact header, .user-info, .company-info {
+  flex-direction: column;
+}
+
+main > section, footer, .result img {
+  width: 100%;
+}
+
+main > section {
+  margin-bottom: 80px;
+}
+
+.search, #contact > section {
+  width: 70%;
+}
+
+.search, .result, #contact > section, #home section {
+  margin: auto;
+}
+
+.search, .result {
+  margin-top: 35px;
+}
+
+.search button,
+.search input,
+#contact input,
+#contact .all-info button,
+#contact textarea {
+  border: 1px solid grey;
+  padding: 11px;
+}
+
+.search button {
+  display: inline-block;
+  background: #4e4b4b;
+  width: 10%;
+  border-left: none;
+}
+
+.search input,
+.result img,
+.user-info,
+.company-info,
+.search button {
+  height: 100%;
+}
+
+.search input, .search button {
+  font-size: 17px;
+}
+
+.search input,
+#contact input,
+#contact .all-info button,
+#contact textarea,
+#home section {
+  width: 90%;
+}
+
+.search input,
+#contact input,
+#contact .all-info button,
+#contact textarea {
+  background: #f1f1f1;
+}
+
+.search input {
+  float: left;
+}
+
+.result, #contact header, .user-info p {
+  text-align: center;
+}
+
+.result {
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.product-name, footer {
+  font-size: 20px;
+}
+
+.game-id {
+  font-size: 15px;
+}
+
+.result div > p, #contact header p, #contact header h1 {
+  margin-bottom: 5px;
+}
+
+.result div .product-price, .user-info p {
+  font-size: 25px;
+  color: rgb(44, 3, 78);
+  margin-bottom: 10px;
+}
+
+.user-info p, .result > p, .product-name {
+  font-weight: bold;
+}
+
+.result div {
+  margin: 30px;
+  width: 310px;
+  height: 280px;
+  box-shadow: 5px 10px 10px #d1d0d086;
+}
+
+.result div:hover, #contact > section {
+  box-shadow: 5px 10px 20px rgb(63, 62, 62);
+}
+
+.result img {
+  overflow: hidden;
+}
+
+#make-up .result div {
+  width: 250px;
+  height: 300px;
+}
+
+.hidden, #contact.hidden {
+  display: none;
+}
+
+#contact, #home {
+  height: 83vh;
+}
+
+#contact > section {
+  background-color: white;
+  padding: 20px;
+  height: 70%;
+}
+
+#contact header {
+  margin: 40px;
+  margin-bottom: 20px;
+}
+
+#contact h1 {
+  color: rgb(49, 3, 109);
+}
+
+#contact header p, #contact header h1, .result div .product-price, .game-country {
+  margin-top: 5px;
+}
+
+#contact .all-info {
+  margin-top: 0px;
+  justify-content: space-evenly;
+  height: 65%;
+}
+
+#contact input, #contact .all-info button, #contact textarea {
+  font-size: 13px;
+  height: 30%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.user-info, .company-info {
+  width: 40%;
+}
+
+.company-info {
+  align-items: flex-start;
+}
+
+#home section, #contact textarea {
+  height: 80%;
+}
+
+#contact textarea {
+  resize: none;
+}
+
+#contact textarea::placeholder {
+  vertical-align: top;
+}
+
+#contact .all-info button, body > header {
+  background-color: rgb(44, 3, 78);
+}
+
+#contact .all-info button {
+  align-self: flex-end;
+  width: 30%;
+}
+
+#home h1, .result > p, #contact h1 {
+  font-size: 35px;
+}
+
+#home h1 {
+  align-self: flex-start;
+  margin-bottom: 15px;
+}
+
+#home .result div {
+  height: 90%;
+  margin-left: 40px;
+  width: 25%;
+}
+
+footer {
+  background-color: #969494;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+}
+
+img.loading {
+  height: 230px;
+  width: 230px;
+}

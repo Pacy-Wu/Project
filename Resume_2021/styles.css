@@ -1,0 +1,59 @@
+/*
+  Name: Pacy Wu
+  Date: April 7, 2021
+  Section: CSE 154 AD
+
+  This is the styles.css page for my creative project of CSE154. It is used by
+  CP1 (about.html) and my personal website (mypage.html) to give the site a
+  consistent look and feel.
+*/
+
+body {
+  background-color: goldenrod;
+  font-family: "Helvetica", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 200%;
+  font-variant: small-caps;
+}
+
+footer {
+  text-align: right;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+h1, a:active {
+  color: green;
+}
+
+h2 {
+  color: brown;
+  font-style: italic;
+  font-weight: 900;
+  font-family: 'Chilanka', sans-serif;
+  border-bottom: 2px solid brown;
+}
+
+section > ul > li {
+  font-size: large;
+}
+
+.job-description > li {
+  margin: 10px;
+}
+
+.list-columns {
+  column-count: 3;
+}
+
+.notbold {
+  font-weight: normal;
+}

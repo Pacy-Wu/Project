@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+  Name: Pacy Wu
+  Date: April 22, 2021
+  Section: CSE 154 AD
+
+  This is the index.html page for my creative project of CSE154. It is a game
+  that test you how well you know about me.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>My Interactive Resume</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Do you know about me?
+      </h1>
+      <nav>
+        <!--
+          source from https://snappygoat.com/free-public-domain-images-arrow_choose_select_next/
+          CwyenfhoIAGORjBw_0VqxygW77uuo3TQiMCDTWrkfUU.html#,0,
+          0.d994d0eabfbf8dd59a3e401ee89c3c144fd460c3
+        -->
+        <img src="img/left_arrow.png" alt="left arrow selecting the following options" id="left-arrow">
+        <ul>
+          <li class="selected">About Me</li>
+          <li class="not-selected">Experience</li>
+          <li class="not-selected">Skills</li>
+          <li class="not-selected">Interest</li>
+        </ul>
+        <!--
+          source from https://snappygoat.com/free-public-domain-images-arrow_choose_select_next/
+          CwyenfhoIAGORjBw_0VqxygW77uuo3TQiMCDTWrkfUU.html#,0,
+          0.d994d0eabfbf8dd59a3e401ee89c3c144fd460c3
+        -->
+        <img src="img/right_arrow.png" alt="left arrow selecting the following options" id="right-arrow">
+      </nav>
+      <p>
+        Click left and right arrow.<br>
+        Then, press ENTER to select
+      </p>
+    </header>
+
+    <main>
+      <section id="about-me" class="hidden">
+        <section class="instruction">
+          <h1>About me</h1>
+          <article>
+            <h2>Instruction</h2>
+            <p>
+              There are two questions at this level. You will see one question
+              at a time and not be able to go back to change the answer. After
+              answering, it will tells you whether you are correct or not. Click
+              Start to begin.
+            </p>
+            <button>&lt; START &gt;</button>
+          </article>
+        </section>
+
+        <section class="question-list hidden">
+          <section class="hidden">
+            <article>Question 1: What is my major?</article>
+            <ul>
+              <li>Computer Science</li>
+              <li>ACMS - DMA</li>
+              <li>Informatics</li>
+              <li>Mathematics</li>
+            </ul>
+          </section>
+
+          <section class="hidden">
+            <article>Question 2: Where am I from?</article>
+            <ul>
+              <li>Seattle, WA</li>
+              <li>San Diego, CA</li>
+              <li>Korea</li>
+              <li>Taiwan</li>
+            </ul>
+          </section>
+
+          <section class="hidden">
+            <article>END</article>
+            <ul>
+              <li>Go back to Menu</li>
+              <li>Play Again</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+
+      <section id="experience" class="hidden">
+        <section class="instruction">
+          <h1>Experience</h1>
+          <article>
+            <h2>Instruction</h2>
+            <p>
+              The section haven't be implemented yet. Please click Start,
+              then go back to the nemu and select "About Me" to enjoy the game.
+            </p>
+            <button>&lt; START &gt;</button>
+          </article>
+        </section>
+        <section class="question-list hidden">
+          <section class="hidden">
+            <article>END</article>
+            <ul>
+              <li>Go back to Menu</li>
+              <li>Go back to Menu</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+
+      <section id="skills" class="hidden">
+        <section class="instruction">
+          <h1>Skills</h1>
+          <article>
+            <h2>Instruction</h2>
+            <p>
+              The section haven't be implemented yet. Please click Start,
+              then go back to the nemu and select "About Me" to enjoy the game.
+            </p>
+            <button>&lt; START &gt;</button>
+          </article>
+        </section>
+        <section class="question-list hidden">
+          <section class="hidden">
+            <article>END</article>
+            <ul>
+              <li>Go back to Menu</li>
+              <li>Go back to Menu</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+
+      <section id="interest" class="hidden">
+        <section class="instruction">
+          <h1>Interests</h1>
+          <article>
+            <h2>Instruction</h2>
+            <p>
+              The section haven't be implemented yet. Please click Start,
+              then go back to the nemu and select "About Me" to enjoy the game.
+            </p>
+            <button>&lt; START &gt;</button>
+          </article>
+        </section>
+        <section class="question-list hidden">
+          <section class="hidden">
+            <article>END</article>
+            <ul>
+              <li>Go back to Menu</li>
+              <li>Go back to Menu</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

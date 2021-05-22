@@ -1,0 +1,209 @@
+/*
+  Name: Pacy Wu
+  Date: April 22, 2021
+  Section: CSE 154 AD
+
+  This is the style.css page for CP2 of CSE154. It is used by index.html to give
+  the site a consistent background with a picture of the aquarium and give each
+  part of the game a style for better readilibity.
+*/
+
+body {
+  /*
+    image from
+    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petsmart.com%2Ffish%2Fdecor-gravel-and-substrate%2Fbackgrounds%2
+    Ftop-fin-coral-and-treasure-reversible-aquarium-background-5269004.html&psig=AOvVaw0NEEWsRob0YedxUZ46k_Ca&ust=
+    1619148856182000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLir0t_1kPACFQAAAAAdAAAAABAE
+  */
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.correct, .wrong, header, h1, .instruction article button {
+  font-family: 'Creepster', cursive;
+}
+
+header, h1 {
+  letter-spacing: 0.5rem;
+}
+
+header, section.instruction, .question-list > section {
+  height: 100vh;
+}
+
+header,
+header > nav,
+header > nav > ul,
+section.instruction,
+.instruction article,
+.question-list > section,
+.question-list ul {
+  display: flex;
+}
+
+header, header > nav > ul, section.instruction, .instruction article, .question-list > section {
+  flex-direction: column;
+}
+
+header, header > nav, header > nav > ul, section.instruction, .question-list > section {
+  align-items: center;
+}
+
+header, header > nav, section.instruction, .question-list > section {
+  justify-content: center;
+}
+
+header > nav > img, .instruction article {
+  padding: 25px;
+}
+
+header > nav > ul,
+.instruction article,
+.question-list article,
+.question-list ul li,
+.correct,
+.wrong {
+  border-radius: 25px;
+}
+
+.question-list ul li, .correct, .wrong {
+  padding: 20px;
+}
+
+header p, .instruction article button {
+  font-size: 20px;
+}
+
+.instruction article, .question-list > section {
+  width: 60%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header, .correct, .wrong {
+  font-size: 50px;
+}
+
+header h1 {
+  font-size: 85px;
+  color: rgb(247, 135, 8);
+  margin-bottom: 20px;
+  text-shadow: 8px 8px 3px black;
+  letter-spacing: normal;
+}
+
+header > nav > img {
+  height: 130px;
+  width: 60px;
+}
+
+header > nav > ul {
+  height: 250px;
+  justify-content: space-around;
+  background-color: rgba(211, 211, 211, 0.7);
+  padding: 40px;
+  font-size: 37px;
+  color: rgba(0, 128, 0, 0.3);
+}
+
+header .selected {
+  color: rgba(0, 128, 0, 1);
+}
+
+.correct, .wrong, header p {
+  letter-spacing: 0.2rem;
+}
+
+header p {
+  color: rgb(199, 195, 195);
+}
+
+main {
+  font-family: 'Original Surfer', cursive;
+}
+
+main h1 {
+  color: rgb(16, 197, 16);
+  font-size: 70px;
+}
+
+.instruction article {
+  background-color: rgba(255, 255, 255, 0.623);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.instruction article h2 {
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+
+.instruction article p {
+  font-size: 25px;
+}
+
+.instruction article button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  align-self: flex-end;
+  justify-self: flex-end;
+  letter-spacing: 0.3rem;
+}
+
+.instruction article button:active, .correct, .wrong {
+  color: red;
+}
+
+.question-list > section {
+  margin: auto;
+  text-align: center;
+}
+
+.question-list article, .question-list ul li {
+  color: white;
+}
+
+.question-list article {
+  width: 80%;
+  padding: 30px;
+  background-color: rgb(22, 22, 78, 0.8);
+  font-size: 28px;
+  margin: 25px;
+}
+
+.question-list ul {
+  width: 100%;
+  padding: 0px;
+  margin-top: 0px;
+  flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: space-evenly;
+}
+
+.question-list ul li {
+  background-color: rgba(141, 7, 130);
+  width: 35%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.question-list ul li:active {
+  background-color: rgb(247, 135, 8);
+}
+
+.correct, .wrong {
+  margin: 0px;
+}
+
+.hidden,
+#about-me > section.hidden,
+.question-list > section.hidden,
+#experience > section.hidden,
+#skills > section.hidden,
+#interest > section.hidden {
+  display: none;
+}
